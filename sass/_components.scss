@@ -1,0 +1,85 @@
+.premium {
+  display: flex;
+  flex-direction: column;
+
+  padding: 5.8rem 5.9rem 4.8rem 5.4rem;
+
+  @include respond(tablet) {
+    padding: 4.8rem;
+  }
+
+  color: var(--color-white);
+
+  &__heading {
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 2.2rem;
+
+    @include respond(tablet) {
+      font-size: 3.2rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  &__content {
+    font-size: 2rem;
+    line-height: 3.4rem;
+    margin-bottom: 3.9rem;
+
+    @include respond(tablet) {
+      font-size: 1.8rem;
+      margin-bottom: 3.6rem;
+      height: 14rem;
+    }
+
+    @include respond(mobile) {
+      width: 90vw;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+
+    @include respond(tablet) {
+      height: 5.2rem;
+      margin-bottom: 3.2rem;
+    }
+
+    strong {
+      font-size: 6.5rem;
+    }
+  }
+
+  button {
+    height: 6.1rem;
+    border-radius: 1.2rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    cursor: pointer;
+
+    @include respond(mobile) {
+      width: 80vw;
+    }
+  }
+
+  &__btn-1 {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    margin-bottom: 1.6rem;
+
+    &:hover {
+      background-color: var(--color-teal);
+    }
+  }
+
+  &__btn-2 {
+    background-color: var(--color-white);
+    color: var(--color-black);
+
+    &:hover {
+      background-color: var(--color-yellow);
+    }
+  }
+}

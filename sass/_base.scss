@@ -1,0 +1,30 @@
+:root {
+  --color-teal: #66e2dc;
+  --color-orange: #fa7453;
+  --color-yellow: #ffb964;
+  --color-white: #fcfaf9;
+  --color-black: #191826;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
